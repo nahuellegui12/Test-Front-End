@@ -1,5 +1,6 @@
-body {
+* {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +11,211 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App{
+  max-width: 1550px;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  box-shadow: 0 2px 6px #6e6e6e;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+/*-------------------------Header--------------------------*/
+
+header{
+  width: 95%;
+  min-height: 90px;
+  max-width: 1530px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.input__header{
+  top: 22px;
+  left: 643px;
+  width: 500px;
+  height: 30px;
+  border-radius: 7px grey;
+}
+
+.item__micuenta{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+a:hover{
+  color: rgb(0, 0, 0);
+}
+
+li{
+  list-style: none;
+}
+
+header ul li{
+  padding: 0 1rem;
+}
+
+header ul li a{
+  font-weight: bold;
+}
+
+header .cart{
+  position: relative;
+  cursor: pointer;
+}
+
+header .cart box-icon{
+  width: 45px;
+  height: 45px;
+}
+
+header .cart span{
+  position: absolute;
+  top: -1rem;
+  right: -.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid red;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 0rem;
+  font-size: 1rem;
+  font-weight: 400;
+  background: red;
+}
+
+/*---------------------Banner---------------------*/
+
+.banner {
+  width: 100%;
+  height: 100%;
+}
+
+.banner .imagen__banner{
+  margin-top: 150px;
+  top: 100px;
+  left: 910px;
+  width: 100%;
+  height: 100%;
+  /* UI Properties */
+  opacity: 1;
+}
+
+/*-----------------------Productos---------------------------*/
+
+.title{
+  font-size: 1.4rem;
+  padding: 2rem 0 0 0;
+  color: black;
+}
+
+.productos{
+  width: 80%;
+  padding: 2rem 2rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1rem;
+  box-sizing: border-box;
+}
+
+.producto {
+  width: 216px;
+  height: 353px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 2px 5px 0px rgb(94, 94, 94);
+  border: 6px solid transparent;
+  border-radius: 5px;
+}
+
+.producto:hover .producto__footer{
+  background: #E6E8EA;
+  transition: .4s;
+}
+
+.producto:hover .buttom{
+  background: #E6E8EA;
+  transition: .4s;
+}
+
+.producto__img img{
+  top: 608px;
+left: 380px;
+width: 216px;
+height: 200px;
+background: transparent 0% 0% no-repeat padding-box;
+opacity: 1;
+
+}
+
+.producto__footer{
+  width: 90%;
+  padding: 1rem;
+  transition: .2s;
+}
+
+.producto__footer .nombre__producto{
+  font-weight: 600;
+  font: normal normal 600 12px/16px Nunito;
+  letter-spacing: 0px;
+  color: #7A7A7A;
+  opacity: 1;
+}
+
+.producto__footer .precio__producto{
+  text-align: center;
+  font: normal normal bold 18px/24px Nunito;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.producto .buttom{
+  width: 105%;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .4s;
+}
+
+.buttom .btn{
+  top: 914px;
+  left: 425px;
+  width: 125px;
+  height: 32px;
+/* UI Properties */
+  color: #FFFFFF;
+  background: #000000 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  opacity: 1;
+  margin: 0 auto;
+}
+
+
+/*---------------------Mediaquery---------------------*/
+@media only screen and (max-width: 930px){
+  header ul{
+    display: none;
+  }
 }

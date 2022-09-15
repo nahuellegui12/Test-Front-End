@@ -1,3 +1,6 @@
+# Para Ejecutar este proyecto
+ Primero debe abrir una consola en el editor de texto y ejecutar el comando: "npm start"
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
