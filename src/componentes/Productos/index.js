@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Header from "../Header";
 
 export const ProductosLista = () => {
     const url = "https://corebiz-test.herokuapp.com/api/v1/products"
@@ -30,8 +31,8 @@ export const ProductosLista = () => {
                                         <p className='nombre__producto'>{todo.productName}</p>
                                         <p className='precio__producto'>Por ${todo.price}</p>
                                     </div>
-                                    <div className='buttom'>
-                                        <button className='btn'>
+                                    <div className='buttom' >
+                                        <button className='btn' id='boton-contador'>
                                             Comprar
                                         </button>
                                     </div>

@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import { EHCACHE } from 'generator-jhipster/jdl/jhipster/cache-types';
+import React, { useState, useEffect } from 'react'
 import Corebiz from '../../images/Corebiz.png'
 
 
@@ -8,7 +9,14 @@ export const Header = () => {
     const increase = ()=> {
         setCount(count + 1);
     }
- 
+
+    
+    let botonContador=document.querySelectorAll("#boton-contador");
+    
+    botonContador.forEach((x)=>{
+        x.addEventListener("click", increase);
+    })
+      
     return (
         <header>
             <a href='#'>
