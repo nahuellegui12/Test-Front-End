@@ -1,4 +1,3 @@
-import { R2DBC_DB_OPTIONS } from 'generator-jhipster/generators/generator-constants';
 import Cabecera from '../../images/Cabecera.png'
 import React, { useState, useEffect } from 'react';
 
@@ -34,7 +33,7 @@ export const ProductosLista = () => {
                                     </div>
                                     <div className='buttom'>
                                         <button className='btn'>
-                                            comprar
+                                            Comprar
                                         </button>
                                     </div>
                                 </div>

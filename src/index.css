@@ -103,6 +103,9 @@ header .cart span{
 }
 
 /*---------------------Banner---------------------*/
+.imagen__banner-mobile{
+  display: none;
+}
 
 .banner {
   width: 100%;
@@ -212,10 +215,43 @@ opacity: 1;
   margin: 0 auto;
 }
 
+/*---------------Footer---------------------*/
+
+.imagen__footer{
+  width: 100%;
+}
+
+.imagen__footer-mobile{
+  display: none;
+}
 
 /*---------------------Mediaquery---------------------*/
 @media only screen and (max-width: 930px){
   header ul{
     display: none;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .imagen__banner{
+    display: none;
+  }
+  .imagen__banner-mobile{
+    display: flex;
+    margin-top: 150px;
+    top: 100px;
+    left: 910px;
+    width: 100%;
+    height: 100%;
+    /* UI Properties */
+    opacity: 1;
+  }
+
+  .imagen__footer{
+    display: none;
+  }
+  .imagen__footer-mobile{
+    display: inline;
+    width: 100%;
   }
 }
