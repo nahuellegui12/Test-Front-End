@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Corebiz from '../../images/Corebiz.png'
 
 
 export const Header = () => {
+    const [count, setCount] = useState(0);
 
+    const increase = ()=> {
+        setCount(count + 1);
+    }
+ 
     return (
         <header>
             <a href='#'>
@@ -12,7 +17,7 @@ export const Header = () => {
                 </div>
             </a>
             <div>
-                <input placeholder='Que estas uscando?' className='input__header'/>
+                <input placeholder='Que estas buscando?' className='input__header'/>
             </div>
             <ul>
                 <li className='item__micuenta'>
@@ -22,8 +27,9 @@ export const Header = () => {
             </ul>
             <div className='cart'>
                 <box-icon name="cart"></box-icon>
-                <span className="item__total">1</span>
+                <span className="item__total">{count}</span>
             </div>
         </header>
+        
     )
 }
